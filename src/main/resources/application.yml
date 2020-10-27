@@ -1,0 +1,37 @@
+# can reference variables
+# greeting:
+#   welcome: You are using ${spring.application.name}.
+
+# setting the port to 0 will set up the application on a randomly assigned port that is open.
+# this is useful for concurrent testing or when you don't care what the port is.
+# server:
+    # port: 9090
+
+# for manually setting up an embedded H2 database
+# $ keytool -keystore mykeys.jks -genkey -alias tomcat -keyalg RSA
+# server:
+#   port: 8443
+#   ssl:
+#     key-store: file:///path/to/mykeys.jks
+#     key-store-password: letmein
+#     key-password: letmein
+
+# manual control over logging (instead of logback.xml)
+# logging:
+#     path: /var/logs/
+#     file: TacoCloud.log
+#   level:
+#     root: WARN
+#     org:
+#       springframework:
+#         security: DEBUG
+
+# spring:
+#   datasource:
+#     schema:
+#     - order-schema.sql
+#     - ingredient-schema.sql
+#     - taco-schema.sql
+#     - user-schema.sql
+#     data:
+#     - ingredients.sql
